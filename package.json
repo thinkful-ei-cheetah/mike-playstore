@@ -1,0 +1,29 @@
+{
+  "name": "playstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "playstore.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debug": "ndb app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkful-ei-cheetah/mike-playstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkful-ei-cheetah/mike-playstore/issues"
+  },
+  "homepage": "https://github.com/thinkful-ei-cheetah/mike-playstore#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.11"
+  }
+}
