@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const playstores = require('./playstores');
+const playstores = require('../playstores');
 const {capitalize} = require('./helper');
 const app = express();
 
