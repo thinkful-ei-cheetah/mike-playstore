@@ -26,7 +26,7 @@ app.get('/store', (req, res) => {
         // if 'a' is less than 'b' return '1'
         // if 'a' is greater than 'b' return '-1'
         // else return '0'
-        return a[sort] < b[sort] ? 1 : a[sort] > b[sort] ? -1 : 0;
+        return a[sort] > b[sort] ? 1 : a[sort] < b[sort] ? -1 : 0;
       });
     } else {
       results.sort((a, b) => {
@@ -55,6 +55,11 @@ app.get('/store', (req, res) => {
   res.status(200).json(results);
 });
 
-app.listen(3000, () => {
-  console.log('server running on port 3000');
-});
+// // hacky way to prevent server and test collision
+// if (process.env.NODE_ENV !== 'test') {
+//   app.listen(3000, () => {
+//     console.log('server running on port 3000');
+//   });
+// }
+
+module.exports = app;
